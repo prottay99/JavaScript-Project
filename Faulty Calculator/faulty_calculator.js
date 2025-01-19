@@ -13,8 +13,8 @@ let obj = {
 
 if (random < 0.1) {
     c = obj[c];
-    console.log(`The result is ${eval(`${a} ${c} ${b}`)}`)
+    console.log(`The result is ${eval(`${a} ${c} ${b}`)}`);
 }
 else {
-    console.log(`The result is ${eval(`${a} ${c} ${b}`)}`)
+    console.log(`The result is ${eval(`${a} ${c} ${b}`)}`);
 }
