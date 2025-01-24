@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", serif;
+}
+
+.container {
+    background-color: #0F0F0F;
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left {
+    position: relative;
+}
+
+.thumb img {
+    border-radius: 8px;
+}
+
+.duration {
+    background-color: #0f0f0fd1;
+    color: #fff;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    padding: 2px 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.thumb-heading{
+    margin-bottom: 10px;
+}
+.thumb-heading a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.thumb-info{
+    display: flex;
+    gap: 10px;
+}
+.channal-name a{
+    text-decoration: none;
+    color: #afacac;
+    font-size: 14px;
+    font-weight: 400;
+}
+.view, .time{
+    color: #afacac;
+    font-size: 14px;
+    font-weight: 400;
+}
