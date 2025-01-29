@@ -1,3 +1,4 @@
+// Print in the console
 function randTime() {
     let rand = Math.ceil(Math.random() * 7) * 1000;
     return rand;
