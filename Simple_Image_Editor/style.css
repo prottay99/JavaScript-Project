@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Big Shoulders", sans-serif;
+}
+
+/* ======== Utility class start =========== */
+.green {
+    background-color: rgb(47, 173, 47);
+}
+.slate {
+    background-color: rgb(43, 50, 58);
+}
+
+.container {
+    width: 70dvw;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn {
+    padding: 12px 2rem;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: rgb(27, 115, 197);
+}
+
+.center {
+    text-align: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+/* ======== Utility class end =========== */
+
+.nav-wraper {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.image-save {
+    display: flex;
+    gap: 20px;
+}
+
+.image-save button {
+    color: #fff;
+}
+
+.help-text {
+    font-size: 1.5rem;
+    margin: 30px 0;
+}
+
+.image-controls h4, .file-controls h4 {
+    margin: 25px 0;
+}
+
+.row {
+    gap: 50px;
+    margin: 50px 0;
+}
+
+.range-field {
+    gap: 15px;
+}
+
+.col {
+    border: none;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0px 0px 20px 5px #dddddd;
+}
+.preset-filters{
+    margin: 40px 0;
+}
+.preset-filters button{
+    margin-right: 10px;
+}
+.preset-filters h4{
+    margin: 15px 0;
+}
+
+#sourceImage,
+.image-controls,
+.image-save,
+.preset-filters {
+    display: none;
+}
+
+.image-preview {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#canvas {
+    max-height: 420px;
+    object-fit: contain;
+}
+
+.file-controls{
+    margin: 20px 0;
+}

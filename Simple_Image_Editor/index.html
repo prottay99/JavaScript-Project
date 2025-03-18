@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImgTouch - Simple Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="slate">
+        <div class="nav-wraper container flex">
+            <div class="logo">ImgTouch - Simple Image Editor</div>
+            <ul class="image-save">
+                <button class="btn blue" onclick="saveImage()">Save</button>
+                <button class="btn red" onclick="resetImage()">Reset</button>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hidden image that will be used for holding the source image -->
+    <img id="sourceImage" crossorigin="anonymous">
+
+    <div class="image-preview">
+        <!-- Canvas that will hold the image to be edited -->
+        <canvas id="canvas" height="0"></canvas>
+    </div>
+
+    <main class="container">
+        <!-- Text to be shown at the beginning of the application -->
+        <div class="help-text center">Please Upload an Image to Start Editing</div>
+
+        <!-- All the image controls that will be used for modifying the image -->
+        <div class="image-controls">
+            <h4>Image Controls</h4>
+
+            <div class="row flex">
+                <div class="col">
+                    <span class="range-field flex">
+                        <label for="brightnessSlider">Brightness</label>
+                        <input id="brightnessSlider" type="range" value="100" min="0" max="300"
+                            onchange="applyFilter()">
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="range-field flex">
+                        <label for="contrastSlider">Contrast</label>
+                        <input id="contrastSlider" type="range" value="100" min="0" max="200" onchange="applyFilter()">
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="range-field flex">
+                        <label for="grayscaleSlider">Grayscale</label>
+                        <input id="grayscaleSlider" type="range" value="0" min="0" max="100" onchange="applyFilter()">
+                    </span>
+                </div>
+            </div>
+
+            <div class="row flex">
+                <div class="col">
+                    <span class="range-field flex">
+                        <label for="saturationSlider">Saturation</label>
+                        <input id="saturationSlider" type="range" value="100" min="0" max="300"
+                            onchange="applyFilter()">
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="range-field flex">
+                        <label for="sepiaSlider">Sepia</label>
+                        <input id="sepiaSlider" type="range" value="0" min="0" max="100" onchange="applyFilter()">
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="range-field flex">
+                        <label for="heuSlider">Hue</label>
+                        <input id="heuSlider" type="range" value="0" min="0" max="360" onchange="applyFilter()">
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Buttons that will be used to change the values to preset ones -->
+        <div class="preset-filters">
+            <h4>Preset Filters</h4>
+            <button class="btn slate text-white" onclick="brightenFilter()">Brighten</button>
+            <button class="btn slate text-white" onclick="bwFilter()">Black and White</button>
+            <button class="btn slate text-white" onclick="funkyFilter()">Funky</button>
+            <button class="btn slate text-white" onclick="vintageFilter()">Vintage</button>
+        </div>
+
+        <!-- File controls to upload a new file  -->
+        <div class="file-controls">
+            <h4>File Controls</h4>
+
+            <!-- Element that will be later used to download the canvas image from code -->
+            <a id="link"></a>
+
+            <!-- File Selector for uploading the image -->
+            <div class="file-field flex">
+                <div>
+                    <span>Upload Image</span>
+                    <input type="file" accept="image/*" onchange="uploadImage(event)">
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
