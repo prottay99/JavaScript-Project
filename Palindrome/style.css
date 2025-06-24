@@ -1,0 +1,40 @@
+body {
+  background-color: #212121;
+  color: #fff;
+}
+
+main {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: aquamarine;
+}
+input {
+  width: 300px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+p {
+  font-size: 1.5rem;
+  color: yellow;
+  text-transform: capitalize;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: antiquewhite;
+  border: none;
+}
