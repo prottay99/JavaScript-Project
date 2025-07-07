@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/506d6f1414.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle"><i class="fa-solid fa-caret-left"></i></div>
+          <div class="circle"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+        <div class="thumbnail">
+          <img src="media/thumbnail.jpg" id="thumbImg" />
+        </div>
+        <div class="music-info">
+          <h2>Bulbuli</h2>
+          <p>Coke Studio Bangla</p>
+        </div>
+        <audio id="song">
+          <source src="media/song.mp3" type="audio/mpeg" />
+        </audio>
+
+        <input type="range" id="progress" />
+
+        <div class="showTime">
+          <p id="time"></p>
+          <p id="music-Time"></p>
+        </div>
+
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
