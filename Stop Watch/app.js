@@ -28,6 +28,7 @@ function watchStart() {
 function watchStop() {
   clearInterval(timer);
 }
+
 function watchReset() {
   clearInterval(timer);
   [hours, minutes, second] = [0, 0, 0];
