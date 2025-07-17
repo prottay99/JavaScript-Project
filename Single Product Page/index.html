@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Product page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="product">
+        <div class="product-img">
+          <img src="image/image1.png" id="product-img" />
+          <div class="controls">
+            <span class="btn active" id="img1"></span>
+            <span class="btn" id="img1"></span>
+            <span class="btn" id="img1"></span>
+          </div>
+        </div>
+        <div class="product-desc">
+          <h1>Casual T-Shirt</h1>
+          <h2>$15.00</h2>
+          <h3>30% OFF</h3>
+          <p>
+            A casual t-shirt that's soft, comfortable, and easy to wear perfect
+            for everyday style and laid back vibes.
+          </p>
+          <form>
+            <div class="size-select">
+              <p>Size</p>
+              <label for="small"
+                ><input type="radio" name="size" id="small" /><span
+                  >S</span
+                ></label
+              >
+              <label for="medium"
+                ><input type="radio" name="size" id="medium" /><span
+                  >M</span
+                ></label
+              >
+              <label for="large"
+                ><input type="radio" name="size" id="large" /><span
+                  >L</span
+                ></label
+              >
+              <label for="x-large"
+                ><input type="radio" name="size" id="x-large" /><span
+                  >XL</span
+                ></label
+              >
+              <label for="xx-large"
+                ><input type="radio" name="size" id="xx-large" /><span
+                  >XXL</span
+                ></label
+              >
+            </div>
+
+            <div class="color-select">
+              <p>Color</p>
+              <label for="red">
+                <input type="radio" name="color" id="red" />
+                <span class="color-1"></span>
+              </label>
+              <label for="green">
+                <input type="radio" name="color" id="green" />
+                <span class="color-2"></span>
+              </label>
+              <label for="blue">
+                <input type="radio" name="color" id="blue" />
+                <span class="color-3"></span>
+              </label>
+              <label for="yellow">
+                <input type="radio" name="color" id="yellow" />
+                <span class="color-4"></span>
+              </label>
+            </div>
+
+            <div class="quantity-select">
+              <p>Quantity</p>
+              <input type="number" value="1" />
+            </div>
+
+            <button>Buy Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
